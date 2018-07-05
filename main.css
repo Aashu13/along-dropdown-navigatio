@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    background: #526748;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.menu {
+    padding: 0;
+    margin: 100px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 10px;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.6;
+    position: relative;
+}
+
+.highlight {
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    background: blue;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
